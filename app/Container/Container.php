@@ -15,4 +15,11 @@ class Container
     {
         return $this->items[$name]();
     }
+
+    public function has($name)
+    {
+        return isset($this->items[$name]);
+    }
+
+
 }

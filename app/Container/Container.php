@@ -2,6 +2,8 @@
 
 namespace App\Container;
 
+use App\Container\Exceptions\NotFoundException;
+
 class Container
 {
     protected $items = [];

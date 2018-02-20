@@ -8,4 +8,4 @@ $container->set('config', function() {
     return new App\Config\Config;
 });
 
-dump($container->config);
+dump($container->config->get('db'));

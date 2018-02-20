@@ -7,3 +7,5 @@ $container = new App\Container\Container();
 $container->set('config', function() {
     return new App\Config\Config;
 });
+
+dump($container->get('config'));

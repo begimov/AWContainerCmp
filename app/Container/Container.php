@@ -10,4 +10,9 @@ class Container
     {
         $this->items[$name] = $closure;
     }
+
+    public function get($name)
+    {
+        return $this->items[$name]();
+    }
 }

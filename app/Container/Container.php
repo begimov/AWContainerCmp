@@ -26,5 +26,8 @@ class Container
         return isset($this->items[$name]);
     }
 
-
+    public function __get($name)
+    {
+        return $this->get($name);
+    }
 }

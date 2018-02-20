@@ -13,6 +13,9 @@ class Container
 
     public function get($name)
     {
+        if (!$this->has($name)) {
+            throw new NotFoundException;
+        }
         return $this->items[$name]();
     }
 
